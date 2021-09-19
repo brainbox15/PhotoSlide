@@ -16,7 +16,7 @@ grid-gap: 1em;
 
 #container > div{
      /* background:gray;       */
-padding: 1em;
+padding: 0.1em;
 } 
 
 
@@ -146,7 +146,7 @@ color: #fff;
     border: none;
     border-radius: 0px 10px 10px 0px;
     background-color: rgba(211, 211, 211, 0.966); 
-    right: 1.2em;
+    right: 0.2em;
 
 }
 
@@ -175,6 +175,8 @@ input{
 display: block;
 width: 5em;
 }
+
+
 }
 
 @media only screen and (max-width:777px) {
@@ -183,6 +185,17 @@ width: 5em;
 }
 
 
+.box10 nav div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#copy{
+    text-align: center;
+}
+/* 
 #copy{
         margin-top: 15px;
     
@@ -192,7 +205,9 @@ width: 5em;
 #copy span{
         display: block;
      text-align: center;
-} 
+}  */
+
+
 }
 
 @media only screen and (max-width:777px) {
@@ -205,87 +220,31 @@ width: 5em;
     
     } 
 
+    #collection{
+       font-size: 23px;
+    }
+
+}
+
+
+
+@media only screen and (min-width:777px) {
+ a, #copy{
+     font-size: 20px;
+ }
+
 
 
 }
 
 
-.active
-{
-border-color: #666;
-}
-
-/* 
-.text{
-    position: absolute;
-    font-size: 3em;
-    color:#000;
-    top: 30%;
-    margin-left: 10px;
-    text-align: center;
-  }
-
-
-  .text2{
-    position: absolute;
+.into-text{
     font-size: 20px;
-    color:#000;
-    top: 40%;
-    margin-left: 10px;
+    font-weight: bold;
+}
+
+#collection{
     text-align: center;
-  }
-
-
-  
-.dot {
-height: 15px;
-width: 15px;
-margin: 0 2px;
-background-color: transparent;
-border-color: #ddd;
-border-width: 5 px;
-border-style: solid;
-border-radius: 50%;
-display: inline-block;
-transition: border-color 0.6s ease;
+    margin: 40px 0px 0px 0px;
+    color: rgb(25, 25, 139);
 }
-
-
-
-.cover{
-    position: relative;
-}
-
-.image-sliderfade{
-    display: none;
-}
-
-.image{
-    width: 100%;
-}
-
-Animation
-.fade
-{
--webkit-animation-name: fade-image;
--webkit-animation-duration: 1.5s;
-animation-name: fade-image;
-animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade-image
-{
-from {opacity: .4}
-to {opacity: 1}
-}
-
-@keyframes fade-image
-{
-from {opacity: .4}
-to {opacity: 1}
-}
-
-@media only screen and (max-width: 300px)
-{
-.text {font-size: 11px}
-} */
