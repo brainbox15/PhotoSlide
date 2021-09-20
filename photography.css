@@ -248,3 +248,9 @@ width: 5em;
     margin: 40px 0px 0px 0px;
     color: rgb(25, 25, 139);
 }
+
+#collection-items p{
+    text-align: center;
+    font-size: 20px;
+
+}
