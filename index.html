@@ -14,8 +14,8 @@
     integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-    crossorigin="anonymous"></script>
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+  </script>
 
   <link rel="stylesheet" href="photography.css">
 </head>
@@ -29,14 +29,18 @@
   <div id="container">
 
     <div class="box1">
-      <nav id="stick">
+      <header id="stick">
         <div>
           <img src="images/headerlogo.png" alt="" class="logo">
         </div>
-        <div><a href="">Home</a><a href="">Gallery</a><a href="">Clients</a><a href="">About</a><a
-            href="contact.html">Contact</a>
+        <nav class="show" id="navigate">
+          <div><a href="">Home</a><a href="">Gallery</a><a href="">Clients</a><a href="">About</a><a
+              href="contact.html">Contact</a>
+          </div>
+        </nav>
+        <div id="menu"> <i class="fas fa-bars"></i>
         </div>
-      </nav>
+      </header>
 
 
       <div id="carouselExampleCaptions" class="carousel slide  dog" data-bs-ride="carousel">
@@ -52,21 +56,21 @@
           <div class="carousel-item active">
             <img src="images/photo2.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <!-- <h5>First slide label</h5> -->
+              <h5>First slide label</h5>
               <p class="into-text">welcome to PhotoSlide, expect nothing but the best!</p>
             </div>
           </div>
           <div class="carousel-item">
             <img src="images/photo5.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <!-- <h5>Second slide label</h5> -->
+              <h5>Second slide label</h5>
               <p class="into-text">We have varieties of photos to suit your taste</p>
             </div>
           </div>
           <div class="carousel-item">
             <img src="images/photo3.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <!-- <h5>Third slide label</h5> -->
+              <h5>Third slide label</h5>
               <p class="into-text">we are second to none, when it comes to quality photos.</p>
             </div>
           </div>
@@ -82,11 +86,11 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-<div id="collection-items">
-      <h1 id="collection">Browse Collections</h1>
-      <p>We offer quality photos that will make your eyes glued to the screen</p>
+      <div id="collection-items">
+        <h1 id="collection">Browse Collections</h1>
+        <p>We offer quality photos that will make your eyes glued to the screen</p>
 
-    </div>
+      </div>
 
 
 
@@ -151,7 +155,6 @@
 
     <!-- <div class="box12">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis, fugit!
-
         </div>   -->
 
 
@@ -159,6 +162,17 @@
 
 
   <script src="Bjs/bootstrap.bundle.min.js"> </script>
+  <script>
+    navigate = document.getElementById('navigate')
+    menu = document.getElementById('menu')
+    menu.addEventListener('click',
+
+      function () {
+
+        console.log(123)
+        navigate.classList.toggle('show')
+      })
+  </script>
 
 </body>
 
