@@ -28,9 +28,7 @@ body {
     padding: 0px;
 }
 
-.dog {
-    display: block
-}
+
 
 .box {
     transition: all 0.5s ease-in;
@@ -111,6 +109,7 @@ a {
 nav div a {
     padding: 15px;
     color: black;
+    border-radius: 10px;
 }
 
 nav div a:hover {
