@@ -194,7 +194,7 @@ input {
         position: absolute;
         top: 0;
         left: 0;
-        transform: translateY(110px);
+        transform: translateY(85px);
         width: 100%;
         transition: 0.5s ease-in transform;
     }
