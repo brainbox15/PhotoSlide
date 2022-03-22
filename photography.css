@@ -5,7 +5,6 @@
 }
 
 body {
-    /* min-height:    300vh; */
     font-family: poppins;
 }
 
@@ -16,7 +15,6 @@ body {
 }
 
 #container>div {
-    /* background:gray;       */
     padding: 1em;
 }
 
@@ -77,19 +75,19 @@ a {
 }
 
 .box1 header {
-    padding: 10px 5px 5px 10px;
+    padding: 10px;
     background: rgb(136, 197, 219);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* position: sticky;
-    top: 0px;  */
 }
 
 
 
 #menu {
     display: none;
+    font-size: 30px;
+    cursor: pointer;
 }
 
 
@@ -101,20 +99,17 @@ a {
     align-items: center;
 }
 
-.box10 nav div a {
-    padding: 15px;
-    color: black;
-}
+
 
 nav div a {
-    padding: 15px;
+    font-size: 18px;
+    padding: 10px;
     color: black;
     border-radius: 10px;
 }
 
 nav div a:hover {
-    /* border-radius: 50%; */
-    background: rgb(38, 180, 236);
+    background: #000;
     color: #fff;
 }
 
@@ -181,7 +176,7 @@ input {
 
 
 
-@media (max-width:650px) {
+@media only screen and (max-width:777px) {
     #menu {
         display: block;
 
@@ -189,11 +184,11 @@ input {
 
     header nav {
         z-index: +1;
-        background: rgba(0, 0, 0, 0.404);
+        background: rgba(0, 0, 0, 0.541);
         position: absolute;
         top: 0;
         left: 0;
-        transform: translateY(85px);
+        transform: translateY(99px);
         width: 100%;
         transition: 0.5s ease-in transform;
     }
@@ -211,9 +206,13 @@ input {
 
 
     .logo {
-        width: 70px;
+        width: 80px;
     }
 
+
+    .box10 nav{
+    padding: 12px;
+    }
 }
 
 @media(max-width:777px) {
@@ -226,10 +225,6 @@ input {
     }
 
 
-
-}
-
-@media only screen and (max-width:777px) {
     #container {
         display: block;
     }
@@ -246,17 +241,16 @@ input {
 
 @media only screen and (min-width:777px) {
 
-    a,
-    #copy {
+    .box10 nav div
+     {
         font-size: 20px;
     }
-
 
 
 }
 
 
-.into-text {
+.intro-text {
     font-size: 20px;
     font-weight: bold;
 }
@@ -270,5 +264,6 @@ input {
 #collection-items p {
     text-align: center;
     font-size: 16px;
+    padding: 0 1em;
 
 }
